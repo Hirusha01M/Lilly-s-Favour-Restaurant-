@@ -1,0 +1,66 @@
+<html></html>
+
+<head>
+    <link rel="stylesheet" href="cssr.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="Name">
+             🍜 Lilly's Favour 
+        </div>
+
+
+        <div class="menu-btn" id="menu-btn">
+            <span> </span> <br>
+            <span></span> <br>
+
+            <p>Menu</p> <br>
+
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Gallary & Menu.html">Gallary & Menu </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <h1 class="about-title">About Us</h1>
+        <div class="about-content">
+            <p>
+                At Lillys Favour, we are committed to serving the best dishes since 2020, with a focus on quality, taste, fine dining experience, and all other exceptional services.
+            </p>
+            <h2>Vision</h2>
+            <p>To provide a wonderful dining experience.</p>
+            <h2>Mission</h2>
+            <p>To be a leading restaurant known for delicious meals and excellent customer service.</p>
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Dine-in</li>
+                <li>Takeaway</li>
+                <li>Home delivery</li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:lillysfavour@gmail.com">lillysfavour@gmail.com</a></p>
+            <p>Phone: <a href="tel:+94343001111">034 300 1111</a></p>
+            <p>Facebook: <a href="#">Lillys Favour Restaurant</a></p>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const nav = document.getElementById('nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('show-nav');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

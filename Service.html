@@ -1,0 +1,43 @@
+<html></html>
+
+<head>
+    <link rel="stylesheet" href="cssr.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="Name">
+             🍜 Lilly's Favour 
+        </div>
+
+
+        <div class="menu-btn" id="menu-btn">
+            <span> </span> <br>
+            <span></span> <br>
+
+            <p>Menu</p> <br>
+
+        </div>
+        <nav class="nav" id="nav">s
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Gallary & Menu.html">Gallary & Menu </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const nav = document.getElementById('nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('show-nav');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

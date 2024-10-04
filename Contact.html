@@ -1,0 +1,98 @@
+<html>
+<head>
+    <link rel="stylesheet" href="cssr.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="Name">
+  🍜 Lilly's Favour 
+        </div>
+
+
+        <div class="menu-btn" id="menu-btn">
+            <span> </span> <br>
+            <span></span> <br>
+
+            <p>Menu</p> <br>
+            
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Gallary & Menu.html">Gallary & Menu </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <!-- Left Section: Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="fullname" required>
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contact">Contact No:</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+                <div style="text-align: center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+      
+        <div class="right-details">
+            <h2>   
+                At Lilly's Favour, we believe that great food brings people together. Our menu is crafted from the finest ingredients, blending traditional flavors with modern twists to create a truly unique dining experience. Whether you're here for a cozy family meal or a special celebration, we promise exceptional service, a warm atmosphere, and dishes that will tantalize your taste buds. From savory appetizers to mouthwatering desserts, every meal is prepared with passion and care.
+            
+                Come in, relax, and let us take you on a culinary journey you won’t forget!     </h2>
+        </div>
+    </div>
+
+   
+
+
+    
+    <script>
+        
+        const menuBtn = document.getElementById('menu-btn');
+        const nav = document.getElementById('nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('show-nav');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
